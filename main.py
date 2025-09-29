@@ -8,9 +8,7 @@ from gtts import gTTS
 import pygame
 import os
 
-newsapi = "4450921ae5e24789804e4e6cb7e6a05a"
-openai_api_key = "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"
-
+newsapi = "YOUR API KEY"
 recognizer = sr.Recognizer()
 pygame.mixer.init()
 
@@ -106,3 +104,4 @@ if __name__ == "__main__":
             cmd = listen_command(timeout=10, phrase_time_limit=8)
             if cmd:
                 processCommand(cmd)
+
